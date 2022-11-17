@@ -68,7 +68,7 @@ class GameFragment : Fragment() {
 
         viewModel.eventBuzz.observe(viewLifecycleOwner, Observer { eventBuzz ->
             buzz(eventBuzz.pattern)
-            viewModel.onBuzzComplete()
+
             Log.i("MainActivity", "buzz called")
         })
 
